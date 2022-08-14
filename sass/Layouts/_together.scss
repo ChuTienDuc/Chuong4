@@ -1,0 +1,99 @@
+.together{
+    display: inline-block;
+    width: 100%;
+    padding: 100px 0;
+    background-image: url(../img/pattern-2.png);
+    background-attachment: fixed;
+    
+    background-repeat: repeat;   
+        #myTab{
+            .nav-item{
+                margin-right: $mg-3;
+                a{
+                    color: $color-black-7;
+                    padding: 35px 70px;
+                    background-color: $color-black-6;
+                    position: relative;
+                    &.active{
+                        color: $color-black-3;
+                        background-color: $color-white-0;
+                        :after{
+                            position: absolute;
+                            bottom: -10px;
+                            left: 50%;
+                            width: 0;
+                            height: 0;
+                            margin-left: -10px;
+                            content: "";
+                            border-width: 10px 10px 0 10px;
+                            border-style: solid;
+                            opacity: 1;
+                            border-color: $color-white-0 transparent transparent transparent;
+                        }
+                    }
+                    i{
+                        font-size: $font-size-3 + 1;
+                    }
+                    &:hover{
+                        color: $color-black-3;
+                        background-color: $color-white-0;
+                        :after{
+                            position: absolute;
+                            bottom: -10px;
+                            left: 50%;
+                            width: 0;
+                            height: 0;
+                            margin-left: -10px;
+                            content: "";
+                            border-width: 10px 10px 0 10px;
+                            border-style: solid;
+                            opacity: 1;
+                            border-color: $color-white-0 transparent transparent transparent;
+                        }
+                    }
+                }
+            }  
+        } 
+        #pills-tabContent{
+            padding: $mg-4 0;
+            line-height: $line-height-1;
+            .together__text{
+                margin-bottom: $mg-5;
+                p{
+                    letter-spacing: 2px;
+                    color: $color-gray-0;
+                    font-size: $font-size-0 + 1;
+                    margin-bottom: 0;
+                }
+                h2{
+                    margin-bottom: 0;
+                    letter-spacing: 2px;
+                    font-weight: $fw-0;
+                }
+            }
+        } 
+    
+
+    @include responsive("medium"){
+        .together-col{
+            padding :0 30px;
+            #myTab{
+                .nav-item{
+                    width: 100%;
+                    margin-bottom: 10px;
+                    text-align: center;
+                    margin-right: 0;
+                }
+            }
+            #pills-tabContent{
+                .together__text{
+                    h2{
+                        font-size: $font-size-2 + 2;
+                    }
+                }
+            }
+        }
+      
+    }
+
+}

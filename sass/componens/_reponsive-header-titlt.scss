@@ -1,0 +1,13 @@
+@include responsive("medium"){
+    .container{
+        max-width: none;
+        .heading__title{
+            h3{
+                font-size: $font-size-2;
+            }
+            p{
+                width: 80%;
+            }
+        }
+    }
+}

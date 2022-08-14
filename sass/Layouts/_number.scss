@@ -1,0 +1,33 @@
+.number{
+    .number__content{
+        padding: $pd-6 0;
+        .number__item{
+            text-align: center;
+            .number__icon{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: $mg-2;
+                color: $color-white-0;
+                i{
+                    padding-right: $pd-5;
+                    font-size: $font-size-3 + 1;
+                }
+            }
+            .number__text{
+                letter-spacing: 1px;
+                color: $color-white-0;
+            }
+        }
+    }
+
+    @include responsive("medium"){
+        .number__content{
+           
+                .number__item{
+                    padding: $pd-1 0;
+                }
+            
+        }
+    }
+}

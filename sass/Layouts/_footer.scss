@@ -1,0 +1,129 @@
+footer{
+    .footer__top{
+        .footer__top__content{
+            padding: $pd-9 0;
+            .footer__top__items{
+                .footer__img{
+                    margin-bottom: $mg-3;
+                    img{
+                        width: auto;
+                        height: 100px;
+                        margin-bottom: $mg-3;
+                    }
+                }
+                p{
+                    margin-bottom: $mg-4;
+                    color: $color-gray-0;
+                    line-height: $line-height-1;
+                }
+                h5{
+                    letter-spacing: 1px;
+                    color: $color-white-0;
+                    font-size: $font-size-0 + 1;
+                    margin-bottom: $mg-4;
+                    font-weight: $fw-0;
+                    line-height: 1.5;
+                }
+                ul{
+                    list-style: none;
+                    li{
+                        border-bottom: $color-black-10 ;
+                        a{
+                            text-decoration: none;
+                            display: block;
+                            color: $color-gray-12;
+                            line-height: 45px;
+                            transition: all .3s;
+                            &:hover{
+                                color: $color-orange-0;
+                            }
+                           i{
+                               padding-right: $pd-8 - 1;
+                           }
+                        }
+                    }
+                }
+                .footer__imgs{
+                    li{
+                        display: inline-block;
+                        border: none;
+                        a{
+                            height: 55px;
+                            width: 55px;
+                            margin: 0 $mg-2 $mg-2 0;
+                            img{
+                                width: 100%;
+                                height: auto;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    .footer__bottom{
+        background-color: $color-black-8;
+        border-top: $color-black-11;
+        color: $color-black-9;
+        .footer__bottom__content{
+            padding: $pd-10 0;
+            width: 100%;
+            .footer__bottom__item{
+                margin-top: $mg-2;
+                p{
+                    margin-bottom: 0;
+                    span{
+                        color: $color-white-0;
+                        transition: all 0.3s;
+                        &:hover{
+                            color:  $color-orange-0;
+                        }
+                    }
+                }
+                
+            }
+            .footer__logo{
+                text-align: right;
+                a{
+                    width: 35px;
+                    height: 35px;
+                    text-align: center;
+                    border: 1px solid $color-gray-13;
+                    border-radius:50%;
+                    line-height: 35px;
+                    display: inline-block;
+                    color: $color-gray-13;
+                    font-size:$font-size-1 - 1 ;
+                    margin-left: $mg-2 + 5;
+                    transition: all .3s;
+                    &:hover{
+                        color: $color-white-0;
+                        border: 1px solid transparent;
+                        background-color: $color-gray-13;
+                    }
+                    &.active{
+                        color: $color-white-0;
+                        border: 1px solid transparent;
+                        background-color: $color-gray-13;
+                    }
+                }
+            }
+        }
+    }
+    @include responsive("large"){
+        .footer__bottom{
+            .footer__bottom__content{
+                .footer__logo{
+                    text-align: left;
+                    margin-top: $mg-2;
+                    a{
+                        &.active{
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

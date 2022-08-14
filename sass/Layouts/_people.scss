@@ -1,0 +1,68 @@
+.people{
+    display: inline-block;
+    width: 100%;
+    padding: 100px 0;
+    .item{
+        text-align: center;
+        width: 70%;
+        margin: auto;
+        .peopel__img{
+            display: inline-block;
+            width: 100px;
+            height: auto;
+            margin-bottom: $mg-3;
+            img{
+                width: 100%;
+                height: auto;
+                border-radius:  50%;
+            }
+        }
+        .peopel__text{
+            p{
+                font-size: $pd-8;
+                font-style: italic;
+                line-height: $line-height-1;
+                color: $color-gray-0;
+                margin-bottom: $mg-4;
+            }
+            .peopel__name{
+                margin-top: 10px;
+                letter-spacing: 2px;
+                color: $color-black-3;
+                font-size: $font-size-0 + 1;
+                p{
+                    display: block;
+                    color: $color-gray-0;
+                    font-size: $font-size-0 - 1;
+                }
+            }
+        }
+        
+    }
+    .owl-theme{
+        .owl-nav{
+            display: none;
+        }
+    } 
+    .owl-theme{
+        .owl-dots{
+            .owl-dot{
+                &:hover{
+                    span{
+                        opacity: 1;
+                    }
+                }
+                &.active{
+                    span{
+                        opacity: 1;
+                    }
+                }
+                span{
+                    opacity: 0.5;
+                    background: $color-gray-11;
+                }
+            } 
+        }
+    } 
+     
+}

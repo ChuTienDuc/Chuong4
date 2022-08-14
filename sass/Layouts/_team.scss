@@ -1,0 +1,155 @@
+.team{
+    display: inline-block;
+    width: 100%;
+    padding: 100px 0;
+    .team__img{
+        position: relative;
+        overflow: hidden;
+        img{
+            width: 100%;
+        }
+        .team-intro{
+            position: absolute;
+            right: 0;
+            bottom: 30px;
+            width: 70%;
+            padding: 10px 20px;
+            text-align: right;
+            background: $color-black-5;
+            h5{
+                color: $color-white-0;
+                margin-bottom: 0;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                font-size: $font-size-0 + 1;
+                font-weight: normal;
+                line-height: 1.5;
+            }
+            span{
+                color: $color-white-3;
+                font-size: $font-size-0 - 1;
+                margin-bottom: 0;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+            }
+        }
+        .team-hover{
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: 0;
+            border: 20px solid $color-gray-7;
+            background-color: $color-white-2;
+            transition: all 0.3s;
+            opacity: 0;
+            &:hover{
+                .team-hover__bottom{
+                    bottom: 10%;
+                    opacity: 1;
+                }
+                .team-hover__top{
+                    top: 35%;
+                    opacity: 1;
+                }
+                opacity: 1;
+            }
+            .team-hover__top{
+                position: absolute;
+                top: 0;
+                width: 100%;
+                padding: 0 20px;
+                transition: all .3s .2s;
+                transform: translateY(-55%);
+                text-align: center;
+                opacity: 0;
+                h4{
+                    margin-bottom: $mg-3 + 5;
+                    letter-spacing: 4px;
+                    text-transform: uppercase;
+                    font-size: $font-size-0 + 1;
+                }
+                p{
+                    margin-bottom: $mg-0 - 2;
+                    color: $color-gray-0;
+                    font-size: $font-size-0 + 1;
+                    font-weight: normal;
+                    line-height: $line-height-1;
+                }
+            }
+            .team-hover__bottom{
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                transform: translateY(45%);
+                text-align: center;
+                opacity: 0;
+                transition: all .3s .2s;
+                a{
+                    color: $color-black-3;
+                    margin: 0 $mg-2;
+                    font-size: $pd-2 + 4;
+                }
+            }
+        }
+    }
+    .team__item{
+        margin-top: 100px;
+        background-color: $color-white-3;
+        padding: 40px;
+        width: 100%;
+        display: flex;
+        justify-content:space-between;
+        align-items:center;
+        .team__info{
+            h4{
+                margin-bottom: 0;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                font-size: $font-size-2;
+                span{
+                    color: $color-orange-0;
+                }
+            }
+            p{
+                display: block;
+                margin-top: $mg-2;
+                color: $color-gray-0;
+            }
+        }
+        .team__button{
+            padding: 15px 30px;
+            background: $color-black-3;
+            transition: all 0.3s;
+            a{
+                color: $color-white-0;
+                text-decoration: none;
+            }
+            &:hover{
+                background: $color-orange-0;
+            }
+        }
+    }
+
+    @include responsive("medium"){
+        .container{
+            max-width: none;
+            .heading__title{
+                h3{
+                    font-size: $font-size-2;
+                }
+                p{
+                    width: 80%;
+                }
+            }
+        }
+        
+    } 
+
+    // @include responsive("large"){
+    //    .team-col{
+    //        margin-bottom: 20px;
+    //    }
+    // } 
+}

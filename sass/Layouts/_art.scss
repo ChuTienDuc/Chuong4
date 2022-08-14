@@ -1,0 +1,60 @@
+.art{
+    background-image: url(../img/8.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 470px;
+    padding: 150px 0;
+    margin-bottom: 50px;
+    .art__content{
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        p{
+            letter-spacing: 3px;
+            font-size: $font-size-4;
+            color: $color-orange-0;
+            margin-bottom: 0;
+        }
+        h1{
+            margin-bottom: 0;
+            letter-spacing: 2px;
+            font-weight: $fw-0;
+            color: $color-white-0;
+        }
+        .art__item{
+            display: inline-block;
+            width: 100%;
+            margin-top: 50px;
+            a{
+                background-color: $color-orange-0;
+                padding: 15px 30px;
+                font-size: $font-size-0 + 1;
+                font-weight: normal;
+                color: $color-white-0;
+                text-transform: uppercase;
+                text-decoration: none;
+                transition: all 0.5s;
+                &:hover{
+                    background-color: $color-white-0;
+                    color: $color-black-0;
+                }
+            }
+            
+        }
+    }
+
+    @include responsive("large"){
+        h1{
+            font-size: $font-size-3 + 1;
+        }
+    }
+
+    @include responsive("medium"){
+        h1{
+            font-size: $font-size-5;
+        }
+    }
+}

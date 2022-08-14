@@ -1,0 +1,24 @@
+.trademark{
+    display: inline-block;
+    width: 100%;
+    padding: 100px 0;
+    .trademark__carousel{
+        .item{
+            width: 230px;
+            margin-right: 0;
+            .trademark__item{
+                margin: $mg-3;
+                img{
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+    .owl-theme{
+        .owl-nav{
+            display: none;
+        }
+    } 
+}
